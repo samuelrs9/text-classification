@@ -24,5 +24,5 @@ predict.py
 ``` 
 
 ## TODO
-* Testar mais configurações de arquiteturas.
+* Testar mais variações de hiperparâmetros na arquitetura da rede neural.
 * Testar com outros datasets.
