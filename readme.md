@@ -7,7 +7,7 @@ conda create -n nlp-env python=3 pip tensorflow pandas matplotlib
 conda activate nlp-env
 ```
 ## Dataset
-Na raíz do repositório pode ser encontrado um arquivo chamado dataset.csv. Esse dataset contém frases rotuladas com as seguintes categorias: **educação**, **finanças**, **indústrias**, **orgão público** e **varejo**.
+Na raíz do repositório pode ser encontrado um arquivo chamado "dataset.csv". Esse dataset contém frases rotuladas com as seguintes categorias: **educação**, **finanças**, **indústrias**, **orgão público** e **varejo**.
 
 Essa base possui apenas 521 amostras de frases, o que pode dificultar bastante a generalização de modelos de classificação. 
 
