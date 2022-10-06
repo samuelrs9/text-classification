@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-from neural_net import TextClassification
+from core import TextClassification
     
 def train(dataset_file,text_col,labels_col):
     """
@@ -16,7 +16,7 @@ def train(dataset_file,text_col,labels_col):
     tc = TextClassification(dataset,text_col,labels_col)
     tc.create_train_validation_datasets(batch_size=8,train_size=0.9)
     tc.build_model()
-    tc.train(epochs=20,learning_rate=0.002)
+    tc.train(epochs=100,learning_rate=0.002)
 
 if __name__ == "__main__":
     if len(sys.argv)==1:

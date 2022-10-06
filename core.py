@@ -38,7 +38,7 @@ class TextClassification:
             self.encoded_labels = util.encode_labels(labels,self.classes)
             
             self.vocab_freq = pd.DataFrame(self.text_statistics['vocab_freq'],index=self.text_statistics['vocab'],columns=['freq'])
-            self.vocab_freq.to_csv('vocab_freq')
+            #self.vocab_freq.to_csv('vocab_freq')
             
             if select_vocab:
                 self.selected_vocab = self.vocab_freq.index[np.logical_and(0<self.vocab_freq.freq,self.vocab_freq.freq<20)]
@@ -132,7 +132,7 @@ class TextClassification:
             optimizer = tf.keras.optimizers.Adam(learning_rate),
             metrics = ["accuracy"])   
         
-        early_stopping_callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss',patience=5)
+        early_stopping_callback = tf.keras.callbacks.EarlyStopping(monitor='val_loss',patience=20)
         
         with tf.device(device):
             self.model.fit(
