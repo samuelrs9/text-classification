@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-from text_classification import TextClassification
+from neural_net import TextClassification
     
 def predict():
     """

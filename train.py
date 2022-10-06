@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-from text_classification import TextClassification
+from neural_net import TextClassification
     
 def train(dataset_file,text_col,labels_col):
     """
