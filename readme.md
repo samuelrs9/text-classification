@@ -9,7 +9,7 @@ conda activate nlp-env
 ## Dataset
 Na raíz do repositório pode ser encontrado um arquivo chamado dataset.csv. Esse dataset contém frases rotuladas com as seguintes categorias: **educação**, **finanças**, **indústrias**, **orgão público** e **varejo**.
 
-Essa base possui apenas 521 amostras de frases, o que pode dificultar bastante a generalização do modelo. 
+Essa base possui apenas 521 amostras de frases, o que pode dificultar bastante a generalização de modelos de classificação. 
 
 ## Treino
 Para treinar o modelo na base "dataset.csv" basta executar o seguinte comando
