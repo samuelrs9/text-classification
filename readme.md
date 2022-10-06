@@ -12,13 +12,13 @@ Na raíz do repositório pode ser encontrado um arquivo chamado dataset.csv. Ess
 Essa base possui apenas 521 amostras de frases, o que pode dificultar bastante a generalização de modelos de classificação. 
 
 ## Treino
-Para treinar o modelo na base "dataset.csv" basta executar o seguinte comando
+Para treinar o modelo com a base "dataset.csv" basta executar o seguinte comando
 ``` 
 train.py dataset.csv sentence category
 ```
 
 ## Predição
-A classificação de textos pode ser feita de forma interativa passando frases através do termnal. Execute
+A classificação de textos pode ser feita de forma interativa passando frases através do terminal. Para tanto, execute o seguinte script
 ```
 predict.py
 ``` 
