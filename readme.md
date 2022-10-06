@@ -17,6 +17,8 @@ Para treinar o modelo com a base "dataset.csv" basta executar o seguinte comando
 train.py dataset.csv sentence category
 ```
 
+Com a arquitetura testada até o momento o treinamento converge bem no conjunto de treino, porém o desempenho não é replicado para conjunto de validação. Isso provavelmente está ocorrendo  devido a baixa quantidade de amostras no dataset.
+
 ## Predição
 A classificação de textos pode ser feita de forma interativa passando frases através do terminal. Para tanto, execute o seguinte script
 ```
@@ -25,4 +27,7 @@ predict.py
 
 ## TODO
 * Testar mais variações de hiperparâmetros na arquitetura da rede neural.
+* Testar algum esquema de data augmentation.
+* Verificar se a camada de vetorização de texto está funcionando adequadamente.
+* Pensar em formas de escolher um vocabulário mais descritivo.
 * Testar com outros datasets.
